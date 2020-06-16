@@ -107,6 +107,7 @@ namespace etkf {
             lsft,
             lalt,
             lgui,
+            lcta,
             rctl,
             rsft,
             ralt,
@@ -146,6 +147,7 @@ namespace etkf {
         case lsft:
         case lalt:
         case lgui:
+        case lcta:
         case rctl:
         case rsft:
         case ralt:
@@ -170,6 +172,7 @@ namespace etkf {
         case rsft: return 0x20;
         case ralt: return 0x40;
         case rgui: return 0x80;
+        case lcta: return 0x01 || 0x04;
 
         default:
             __builtin_unreachable();
